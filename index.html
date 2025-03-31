@@ -8,55 +8,59 @@
 </head>
 <style>
     body {
-    background-image: url(gi.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-.name-container {
-    background-image: url(bg.gif);
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap; 
-}
-.letter {
-    font-size: clamp(30px, 5vw, 50px);
-    font-weight: bold;
-    color: white;
-    width: clamp(50px, 8vw, 70px); 
-    height: clamp(50px, 8vw, 70px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    position: relative;
-}
-.red { background-color: #dc3545; }
-.blue { background-color: #0dcaf0; }
-.green { background-color: #198754; }
-.orange { background-color: #fd7e14; }
-.purple { background-color: #6f42c1; }
-.yellow { background-color: #ffc107; }
-.pink { background-color: #d63384; }
-.teal { background-color: #20c997; }
-.indigo { background-color: #6610f2; }
-.dark-gray { background-color: #343a40; }
-.icon {
-    position: absolute;
-    font-size: clamp(20px, 4vw, 30px); 
-    color: white;
-}
-@media (max-width: 600px) {
-    .name-container {
-        gap: 5px; 
+        background-image: url(gi.gif);
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
     }
-}
+    .name-container {
+        background-image: url(bg.gif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap; 
+    }
+    .letter {
+        font-size: clamp(30px, 5vw, 50px);
+        font-weight: bold;
+        color: white;
+        width: clamp(50px, 8vw, 70px); 
+        height: clamp(50px, 8vw, 70px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: relative;
+    }
+    .red { background-color: #dc3545; }
+    .blue { background-color: #0dcaf0; }
+    .green { background-color: #198754; }
+    .orange { background-color: #fd7e14; }
+    .purple { background-color: #6f42c1; }
+    .yellow { background-color: #ffc107; }
+    .pink { background-color: #d63384; }
+    .teal { background-color: #20c997; }
+    .indigo { background-color: #6610f2; }
+    .dark-gray { background-color: #343a40; }
+    .icon {
+        position: absolute;
+        font-size: clamp(20px, 4vw, 30px); 
+        color: white;
+    }
+    @media (max-width: 600px) {
+        .name-container {
+            gap: 5px; 
+        } 
+    }
 </style>
 <body>
     <div class="name-container">
