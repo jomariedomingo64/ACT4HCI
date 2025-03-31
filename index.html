@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heyyy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<style>
+    body {
+    background-image: url(gi.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.name-container {
+    background-image: url(bg.gif);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+.letter {
+    font-size: clamp(30px, 5vw, 50px);
+    font-weight: bold;
+    color: white;
+    width: clamp(50px, 8vw, 70px); 
+    height: clamp(50px, 8vw, 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+}
+.red { background-color: #dc3545; }
+.blue { background-color: #0dcaf0; }
+.green { background-color: #198754; }
+.orange { background-color: #fd7e14; }
+.purple { background-color: #6f42c1; }
+.yellow { background-color: #ffc107; }
+.pink { background-color: #d63384; }
+.teal { background-color: #20c997; }
+.indigo { background-color: #6610f2; }
+.dark-gray { background-color: #343a40; }
+.icon {
+    position: absolute;
+    font-size: clamp(20px, 4vw, 30px); 
+    color: white;
+}
+@media (max-width: 600px) {
+    .name-container {
+        gap: 5px; 
+    }
+}
+</style>
+<body>
+    <div class="name-container">
+        <div class="letter red">J</div>
+        <div class="letter blue"><i class="bi bi-circle icon"></i>O</div>
+        <div class="letter green">M</div>
+        <div class="letter orange"><i class="bi bi-arrow-bar-up icon"></i>A</div>
+        <div class="letter purple">R</div>
+        <div class="letter yellow">I</div>
+        <div class="letter pink"><i class="bi bi-code icon"></i>E</div>
+    </div>
+
+    <div class="name-container">
+        <div class="letter teal"><i class="bi bi-arrow-down-circle icon"></i>D</div>
+        <div class="letter indigo">O</div>
+        <div class="letter dark-gray"><i class="bi bi-circle icon"></i>M</div>
+        <div class="letter red">I</div>
+        <div class="letter blue"><i class="bi bi-arrow-bar-up icon"></i>N</div>
+        <div class="letter green">G</div>
+        <div class="letter orange"><i class="bi bi-code icon"></i>O</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
